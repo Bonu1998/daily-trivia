@@ -1,0 +1,16 @@
+{
+    "STATES": [
+        "CALIFORNIA",
+        "NEW_YORK",
+        "OHIO"
+    ],
+    "GAMEPLAY": {
+        "total_todays_question_per_day": 1,
+        "total_bonus_questions_per_day": 1,
+        "points_per_question": 3,
+        "points_per_bonus_question": 4,
+        "stateLeaderboardLength": 10,
+        "playerStandingLenght": 10
+    },
+    "PREMIUM_PRODUCTS": []
+}

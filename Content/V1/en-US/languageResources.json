@@ -1,0 +1,18 @@
+{
+    "STRINGS": {
+        "WELCOME_SPEECH": [
+            "Welcome to Daily Trivia"
+        ],
+        "WELCOME_RETURNING": [
+            "Welcome back to Daily Trivia. It looks like you have already played today's question"
+        ],
+        "ASK_TO_SELECT_STATE": [
+            "Select your state?"
+        ]
+    },
+    "AUDIOS": {
+        "WELCOME_AUDIO": [
+            "science-welcome.mp3"
+        ]
+    }
+}

@@ -1,0 +1,50 @@
+export const Constants ={
+    TEMPLATES:{
+        START:"START",
+        QUESTION: "QUESTION"
+    },
+    PLATFORM:{
+        ALEXA:"ALEXA"
+    },
+    TAGS:{
+        AUDIO:"AUDIO"
+    },
+    STRINGS:{
+        LAST_QUESTION:"LAST_QUESTION",
+        PLATFORM:"PLATFORM",
+        LAST_SPEECH:"LAST_SPEECH",
+        APPNAME:"APPNAME",
+        IS_MONETIZATION_ENABLED:"IS_MONETIZATION_ENABLED",
+        SESSION_DATA:"sessionContext.sessionData",
+        USER_DATA:"sessionContext.userData",
+        SUBSCRIPTION_DETAILS:"SUBSCRIPTION_DETAILS",
+        LOCALE: "LOCALE",
+        LOCALE_CONTENT: "LOCALE_CONTENT",
+        IS_DISPLAY_ENABLED: "IS_DISPLAY_ENABLED",
+        SESSION_COUNT: "SESSION_COUNT",
+        USER_STATE: "USER_STATE",
+        STAGE:"STAGE",
+        DEVICE_SIZE:"DEVICE_CONFIG.DEVICE_SIZE",
+        ROUND_DATA:"ROUND_DATA",
+        TODAYS_QUESTION:"TODAYS_QUESTION",
+        BONUS_QUESTION:"BONUS_QUESTION"
+    },
+    ACTIONS:{
+        LAUNCH:"LAUNCH",
+        INVALID_ACTION_APPOLOGY:"INVALID_ACTION_APPOLOGY",
+        INVALID_CLOSE:"INVALID_CLOSE"
+    },
+    SEND_EVENT:{
+        SHOW_TOPIC:"SHOW_TOPIC",
+        ASK_TO_SELECT_STATE:"ASK_TO_SELECT_STATE"
+    },
+    URLS:{
+        DEFAULT_BG:"DEFAULT_BG",
+        WELCOME_AUDIO:"WELCOME_AUDIO"
+    },
+    FILE_NAMES: {
+        LANG_RESOURCE: "languageResources.json",
+        APP_CONFIG: "appConfig.json",
+        CONSTANTS: "Constants.json"
+    }
+}

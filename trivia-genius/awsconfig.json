@@ -1,0 +1,22 @@
+{
+    "runtime": "nodejs16.x",
+    "functionName": "dailyTrviaV1",
+    "role": "arn:aws:iam::764273786456:role/voicegames-nf-lambda-basic-execution",
+    "handler": "index.handler",
+    "profile": "mdlj",
+    "region": "us-east-1",
+    "environmentVariables": {
+        "ENABLE_LOGGING": "true",
+        "ENABLE_DEBUG_LOGGING": "true",
+        "STAGE": "V1",
+        "CACHE_BASE_ADDR": "https://s3.amazonaws.com/voicegamesdata/",
+        "SESSION_DATA_TABLENAME": "dt-session-data",
+        "USER_DATA_TABLENAME": "dt-user-data",
+        "QUESTION_TABLE":"question-storage",
+        "GAME_SERVICE_NAME": "Game-Service-V3",
+        "COUNTER": "14",    
+        "AUTHENTICATION_LAMBDA": "alexaAuthenticationV1",
+        "PRE_PROCESSING_LAMBDA": "alexaPreprocessingV1",
+        "POST_PROCESSING_LAMBDA": "alexaPostprocessingV1"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "TEMPLATES": {
+        "START": {
+            "token": "general",
+            "url": ""
+        }
+    },
+    "SUPPORTED_LOCALES": [
+        "en-IN", "en-US"
+    ],
+    "DEFAULT_LOCALES": [
+        "en-IN"
+    ],
+    "MONETIZATION_LOCALES": [
+        "en-US"
+    ]
+}
