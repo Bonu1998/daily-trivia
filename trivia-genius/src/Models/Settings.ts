@@ -13,11 +13,11 @@ export class Settings {
     ) { }
     static getFile(context: IContext): Promise<Settings> {
         return new Promise((resolve, reject) => {
-            let sessionData = _.get(context.sessionContext, Constants.STRINGS.SESSION_DATA)
+            let sessionData = _.get(context, Constants.STRINGS.SESSION_DATA)
             let appName = _.get(sessionData, Constants.STRINGS.APPNAME)
             let stage = _.get(sessionData,Constants.STRINGS.STAGE)
             let locale = _.get(sessionData, Constants.STRINGS.LOCALE)
-            let path = `${appName}/${stage}/${locale}/localeSettings.json`
+            let path = `${appName}/${stage}/${locale}/settings.json`
             context.cacheClient.getObject(path, Settings, (err: any, data: Settings) => {
                 if (err) {
                     context.logger.log("Error_Fetching_LocaleSetting :" + JSON.stringify(err))
@@ -48,10 +48,12 @@ class Topics {
 
 class GamePlay {
     constructor(
-        public total_todays_question_per_day: number = 0,
-        public total_bonus_questions_per_day: number = 0,
+        public no_daily_question_per_day: number = 0,
+        public no_bonus_questions_per_day: number = 0,
+        public no_extra_bonus_per_day: number = 0,
         public points_per_question: number = 0,
         public points_per_bonus_question: number = 0,
+        public subscriber_points_per_bonus_question: number  = 0,
         public stateLeaderboardLength: number = 0,
         public playerStandingLenght: number = 0,
         public options_for_question: string[] = []  //["A", "B", "C"] or ["1", "2", "3"]

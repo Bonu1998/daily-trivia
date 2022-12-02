@@ -1,0 +1,232 @@
+{
+    "type": "APL",
+    "version": "2022.1",
+    "license": "Copyright 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.\nSPDX-License-Identifier: LicenseRef-.amazon.com.-AmznSL-1.0\nLicensed under the Amazon Software License  http://aws.amazon.com/asl/",
+    "settings": {},
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-viewport-profiles",
+            "version": "1.4.0"
+        },
+        {
+            "name": "alexa-layouts",
+            "version": "1.5.0"
+        },
+        {
+            "name": "customAnimations",
+            "source": "https://voicegamesdata.s3.amazonaws.com/apl-templates/APL_THEMES/customAnimations.json",
+            "version": "0.0.1"
+        }
+    ],
+    "resources": [
+        {
+            "numbers": {
+                "MAX_OPTIONS_PER_ROW": "${@viewportOrientation == @viewportOrientationLandscape || @viewportOrientation == @viewportOrientationEqual ? 2 : 1}"
+            }
+        },
+        {
+            "dimensions": {
+                "titleFontSize": "40dp",
+                "questionFontSize": "40dp",
+                "optionFont": "35dp",
+                "optionTextHeight": "33%"
+            }
+        },
+        {
+            "when": "${@viewportProfile == @hubLandscapeSmall || @viewportProfile == @tvLandscapeXLarge}",
+            "dimensions": {
+                "titleFontSize": "30dp",
+                "questionFontSize": "30dp",
+                "optionFont": "25dp",
+                "optionTextHeight": "50%"
+            }
+        },
+        {
+            "when": "${@viewportProfile == @hubLandscapeMedium || @viewportProfile == @mobileMedium}",
+            "dimensions": {
+                "titleFontSize": "30dp",
+                "questionFontSize": "30dp",
+                "optionFont": "25dp",
+                "optionTextHeight": "40%"
+            }
+        },
+        {
+            "when": "${@viewportProfile == @hubPortraitMedium}",
+            "dimensions": {
+                "titleFontSize": "60dp",
+                "questionFontSize": "70dp",
+                "optionFont": "55dp",
+                "optionTextHeight": "53%"
+            }
+        },
+        {
+            "when": "${@viewportProfile == @hubLandscapeXLarge}",
+            "dimensions": {
+                "titleFontSize": "55dp",
+                "questionFontSize": "70dp",
+                "optionFont": "50dp",
+                "optionTextHeight": "43%"
+            }
+        },
+        {
+            "when": "${@viewportShape == @viewportShapeRound}",
+            "dimensions": {
+                "titleFontSize": "15dp",
+                "questionFontSize": "20dp",
+                "optionFont": "16dp",
+                "optionTextHeight": "29%"
+            }
+        },
+        {
+            "when": "${@viewportProfile == @mobileSmall}",
+            "dimensions": {
+                "titleFontSize": "33dp",
+                "questionFontSize": "35dp",
+                "optionFont": "30dp",
+                "optionTextHeight": "54%"
+            }
+        }
+    ],
+    "styles": {},
+    "onMount": [],
+    "graphics": {},
+    "commands": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "type": "Container",
+                "height": "100%",
+                "width": "100%",
+                "alignItems": "center",
+                "bind": [
+                    {
+                        "name": "optionsHeight",
+                        "type": "dimension",
+                        "value": "${viewport.height * 0.9 * 0.3 / Math.ceil(payload.data.DATA.options.length / @MAX_OPTIONS_PER_ROW)}"
+                    },
+                    {
+                        "name": "optionsWidth",
+                        "type": "dimension",
+                        "value": "${viewport.width * 0.9 / @MAX_OPTIONS_PER_ROW}"
+                    }
+                ],
+                "items": [
+                    {
+                        "type": "AlexaBackground",
+                        "backgroundImageSource": "${payload.data.DATA.background.url}"
+                    },
+                    {
+                        "text": "${payload.data.DATA.title}",
+                        "textAlign": "center",
+                        "textAlignVertical": "center",
+                        "fontSize": "@titleFontSize",
+                        "fontWeight": "bold",
+                        "type": "Text",
+                        "id": "TitleContainer",
+                        "width": "80%",
+                        "height": "20%",
+                        "opacity": 1
+                    },
+                    {
+                        "text": "${payload.data.DATA.primaryText}",
+                        "textAlign": "center",
+                        "textAlignVertical": "center",
+                        "fontSize": "@questionFontSize",
+                        "type": "Text",
+                        "id": "questionContainer",
+                        "width": "85%",
+                        "height": "auto",
+                        "maxHeight": "40%",
+                        "minHeight": "30%",
+                        "opacity": 1
+                    },
+                    {
+                        "data": "${Array.range(0, payload.data.DATA.options.length, @MAX_OPTIONS_PER_ROW)}",
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                        "items": [
+                            {
+                                "type": "Container",
+                                "width": "100%",
+                                "height": "${optionsHeight}",
+                                "direction": "row",
+                                "alignItems": "center",
+                                "justifyContent": "center",
+                                "data": "${Array.slice(payload.data.DATA.options, data, data + @MAX_OPTIONS_PER_ROW)}",
+                                "items": [
+                                    {
+                                        "type": "TouchWrapper",
+                                        "id": "${data.id}",
+                                        "width": "${optionsWidth}",
+                                        "height": "100%",
+                                        "items": [
+                                            {
+                                                "alignItems": "center",
+                                                "justifyContent": "center",
+                                                "items": [
+                                                    {
+                                                        "backgroundColor": "#FEDD00",
+                                                        "items": [
+                                                            {
+                                                                "text": "${data.text}",
+                                                                "textAlign": "center",
+                                                                "fontSize": "@optionFont",
+                                                                "textAlignVertical": "center",
+                                                                "color": "#000000",
+                                                                "type": "Text",
+                                                                "width": "100%",
+                                                                "height": "100%",
+                                                                "alignSelf": "end"
+                                                            }
+                                                        ],
+                                                        "borderRadius": "30",
+                                                        "layoutDirection": "inherit",
+                                                        "type": "Frame",
+                                                        "width": "90%",
+                                                        "height": "80%"
+                                                    }
+                                                ],
+                                                "layoutDirection": "LTR",
+                                                "type": "Container",
+                                                "width": "100%",
+                                                "height": "100%"
+                                            }
+                                        ],
+                                        "onPress": [
+                                            {
+                                                "type": "TadaAnimation",
+                                                "compId": "${data.id}",
+                                                "duration": "100"
+                                            },
+                                            {
+                                                "type": "SendEvent",
+                                                "arguments": [
+                                                    "DISPLAY_ELEMENT_SELECTED",
+                                                    {
+                                                        "id": "ANSWER",
+                                                        "name": "${data.value}",
+                                                        "value": "${data.value}"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "type": "Container",
+                        "id": "optionContainer",
+                        "width": "90%",
+                        "height": "30%",
+                        "opacity": 1
+                    }
+                ]
+            }
+        ]
+    }
+}

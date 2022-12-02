@@ -4,7 +4,7 @@ import { DataHelper } from './DataHelpers'
 import { ActionInput, ExecuteActionsRequest, IContext, IRPC, ISessionContext } from '@flairlabs/flair-infra'
 import { actionHandler } from './ActionHandler'
 import { AppConfig } from './Models/AppConfig'
-import { CheckSubscriptionStatus } from './Common/Monetization'
+import { CheckSubscriptionStatus } from './Common/MonetizationHelper'
 
 
 
@@ -25,7 +25,10 @@ let bussinessHandler = async (input: ActionInput) => {
             // resp. set session attributes
             resp["sessionAttributes"] = context.sessionContext.sessionData
         }
+
         let result: any[] = await Promise.allSettled(promises)
+        context.logger.log("SESSION_DATA: " + JSON.stringify(context.sessionContext.sessionData))
+        context.logger.log("USER_DATA: " + JSON.stringify(context.sessionContext.userData))
         for (let i = 0; i < result.length; i++) {
             if (result[i].status == "rejected") context.logger.log("ERROR_SAVING_DATA_TO_DB: " + JSON.stringify(result[i].reason || result[i]))
         }
@@ -57,7 +60,7 @@ let getContext = async (input: ActionInput): Promise<IContext> => {
         let result = await Promise.all([dataHelper.getUserData(input, context), dataHelper.getSessionData(input, context)])
         if (result[0]) context.sessionContext.userData = result[0]
         if (result[1]) context.sessionContext.sessionData = result[1]
-        
+
     } catch (e) {
         context.logger.log(`Error @getContext: ${JSON.stringify(e)}`)
     } finally {

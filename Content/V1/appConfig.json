@@ -1,12 +1,13 @@
 {
     "TEMPLATES": {
-        "START": {
-            "token": "general",
-            "url": ""
-        }
+        "START": "launchScreen.json",
+        "SHOW_TOPIC": "showTopic.json",
+        "QUESTION": "question.json",
+        "ANSWER": "answer.json"
     },
     "SUPPORTED_LOCALES": [
-        "en-IN", "en-US"
+        "en-IN",
+        "en-US"
     ],
     "DEFAULT_LOCALES": [
         "en-IN"

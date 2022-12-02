@@ -6,22 +6,19 @@ export class AppConfig {
 
     constructor(
         public TEMPLATES: Template = {},
-        public GAMEPLAY: GamePlay = {
-            free: new FreeGameplay(),
-            monetized: new MonetizedGameplay(),
-            stateLeaderboardLength: 0,
-            playerStandingLenght: 0
-        },
         public SUPPORTED_LOCALES: string[] = [],
         public DEFAULT_LOCALES: string[] = [],
         public MONETIZATION_LOCALES: string[] = []
     ) {}
 
 
-    static getFile(input: ActionInput, context: IContext): Promise<AppConfig> {
+    static getFile(context: IContext): Promise<AppConfig> {
         context.logger.log("@AppConfig.getFile invoked")
         return new Promise((resolve, reject) => {
-            let path = `${input.APP_NAME}/${input.STAGE}/${Constants.FILE_NAMES.APP_CONFIG}`
+            let sessionData = _.get(context, Constants.STRINGS.SESSION_DATA)
+            let appName = _.get(sessionData, Constants.STRINGS.APPNAME)
+            let stage = _.get(sessionData, Constants.STRINGS.STAGE)
+            let path = `${appName}/${stage}/${Constants.FILE_NAMES.APP_CONFIG}`
             context.logger.log("AppConfig path: "+path)
             context.cacheClient.getObject(path, AppConfig, (err: any, data: AppConfig) => {
                 if (err) {
@@ -45,8 +42,6 @@ export class AppConfig {
                 _.find(this.DEFAULT_LOCALES, (e) => { return e && e.includes(input.LOCALE.split('-')[0]) }) || this.DEFAULT_LOCALES[0] || "en-IN"
             )
         }
-        context.logger.log(JSON.stringify(this.DEFAULT_LOCALES))
-        context.logger.log("SESSION_DATA: "+JSON.stringify(context.sessionContext.sessionData))
     }
 
 }

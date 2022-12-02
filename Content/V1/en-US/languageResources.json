@@ -1,18 +1,78 @@
 {
     "STRINGS": {
         "WELCOME_SPEECH": [
-            "Welcome to Daily Trivia"
+            "Welcome to Daily Trivia. Each day, I'll ask you a new question. Answer the question correctly to earn points and unlock additional features. And if you would like for me to repeat a question, just say Repeat."
         ],
         "WELCOME_RETURNING": [
             "Welcome back to Daily Trivia. It looks like you have already played today's question"
         ],
         "ASK_TO_SELECT_STATE": [
             "Select your state?"
+        ],
+        "QUESTION_DETAILS": [
+            "Here is your {0} Question of the Day. It is worth {2} points"
+        ],
+        "TOPIC_SHOWCASE": [
+            "The topic of the day is {0}."
+        ],
+        "CORRECT_ANSWER": [
+            "Fantastic! you answwered it correctly"
+        ],
+        "INCORRECT_ANSWER": [
+            "Opps! you answwered this time incorrectly"
+        ],
+        "CORRECT_PERCENTAGE": [
+            "you are with {0}% of user"
+        ],
+        "BADGE_SPEECH": [
+            "you have earned a {0} badge of {1}"
+        ],
+        "TOPIC_OF_THE_DAY": [
+            "The topic of the day is {0}"
+        ],
+        "QUESTION_NUMBER": [
+            "Here is your {0} question of the day"
+        ],
+        "POINTS_SPEECH": [
+            "It is for {0} points"
+        ],
+        "QUESTION_COUNT": [
+            "you have {0} correct answer in a row"
+        ],
+        "POINT_SPEECH": [
+            "You total points are {0}."
+        ],
+        "CURRENT_QUE_POINTS": [
+            "You have earned {0} points."
+        ],
+        "POINTS_TEXT": [
+            "{0} points"
+        ],
+        "TITLES": {
+            "TOPIC_OF_THE_DAY": "Topic Of the Day"
+        },
+        "APOLOGY": [
+            "Sorry I missed that. {0}."
+        ],
+        "SET_STATE_SUCCESS": [
+            "I have set your state successfully."
+        ],
+        "WRONG_STATE": [
+            "Sorry this state does not belong to your locale."
+        ],
+        "END_SPEECH": [
+            "It looks like you have played all questions for today. Do you want to view you statistics? "
         ]
     },
     "AUDIOS": {
         "WELCOME_AUDIO": [
             "science-welcome.mp3"
         ]
+    },
+    "IMAGES": {
+        "DEFAULT_BG_IMAGE": [
+            "{0}/defaultBg.png"
+        ],
+        "START_LOGO": []
     }
 }

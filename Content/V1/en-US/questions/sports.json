@@ -1,0 +1,742 @@
+[
+    {
+        "id": "1",
+        "que": "How long is a regulation NBA game?",
+        "ans": [
+            "48 minutes"
+        ],
+        "expl": [
+            "An NBA game is 4 quarters of 12 minutes each, for a total of 48 minutes."
+        ],
+        "options": [
+            "40 minutes",
+            "48 minutes",
+            "60 minutes"
+        ]
+    },
+    {
+        "id": "2",
+        "que": "What manufacturer makes the official NBA game ball?",
+        "ans": [
+            "Spalding"
+        ],
+        "expl": [
+            "The Spalding Basketball has been the official game ball of the NBA since 1983."
+        ],
+        "options": [
+            "Spalding",
+            "Wilson",
+            "Nike"
+        ]
+    },
+    {
+        "id": "3",
+        "que": "Who won the highest scoring NBA game ever?",
+        "ans": [
+            "Detroit Pistons"
+        ],
+        "expl": [
+            "The Detroit Pistons beat the Denver Nuggets 186 to 184 in 1983."
+        ],
+        "options": [
+            "Detroit Pistons",
+            "Los Angeles Clippers",
+            "Dallas Mavericks"
+        ]
+    },
+    {
+        "id": "4",
+        "que": "Which former player was the inspiration for the NBA logo?",
+        "ans": [
+            "Jerry West"
+        ],
+        "expl": [
+            "Alan Siegel, who designed the logo in 1969, says it's based on a photograph of Jerry West."
+        ],
+        "options": [
+            "Wilt Chamberlain",
+            "Jerry West",
+            "Elgin Baylor"
+        ]
+    },
+    {
+        "id": "5",
+        "que": "How long is an NBA overtime period?",
+        "ans": [
+            "5 minutes"
+        ],
+        "expl": [
+            "The NBA allows 130 seconds before any five minute overtime period."
+        ],
+        "options": [
+            "2 minutes",
+            "5 minutes",
+            "24 minutes"
+        ]
+    },
+    {
+        "id": "6",
+        "que": "How many points is a touchdown worth?",
+        "ans": [
+            "6"
+        ],
+        "expl": [
+            "The answer is 6. The extra point makes a total of 7."
+        ],
+        "options": [
+            "10",
+            "6",
+            "8"
+        ]
+    },
+    {
+        "id": "7",
+        "que": "How many people are there in an official tug of war team?",
+        "ans": [
+            "8"
+        ],
+        "expl": [
+            "Tug of war contests usually pit two teams of eight players against each other."
+        ],
+        "options": [
+            "10",
+            "12",
+            "8"
+        ]
+    },
+    {
+        "id": "8",
+        "que": "How many different ways are there to score in football?",
+        "ans": [
+            "5"
+        ],
+        "expl": [
+            "5 ways. Touchdown, field goal, extra point, safety, and a two point conversion."
+        ],
+        "options": [
+            "7",
+            "6",
+            "5"
+        ]
+    },
+    {
+        "id": "9",
+        "que": "Which Baseball team has won the most World Series titles?",
+        "ans": [
+            "New York Yankees"
+        ],
+        "expl": [
+            "The Yankees have won more titles than any other franchise with 27 title wins."
+        ],
+        "options": [
+            "New York Yankees",
+            "Toronto Blue Jays",
+            "Chicago White Sox"
+        ]
+    },
+    {
+        "id": "10",
+        "que": "Where did the game of Chess originate?",
+        "ans": [
+            "India"
+        ],
+        "expl": [
+            "The most commonly held belief is that chess originated in India before 6th century AD."
+        ],
+        "options": [
+            "Europe",
+            "Arabia",
+            "India"
+        ]
+    },
+    {
+        "id": "11",
+        "que": "Which was the first country to host the Asian games?",
+        "ans": [
+            "India"
+        ],
+        "expl": [
+            "India is a founder member of Asian Games and also the host of the first Asian Games."
+        ],
+        "options": [
+            "China",
+            "Japan",
+            "India"
+        ]
+    },
+    {
+        "id": "12",
+        "que": "Free throw is associated with?",
+        "ans": [
+            "Basketball"
+        ],
+        "expl": [
+            "Free throw is associated with Basketball."
+        ],
+        "options": [
+            "Basketball",
+            "Vollyball",
+            "Football"
+        ]
+    },
+    {
+        "id": "13",
+        "que": "The word Jump ball is associated with?",
+        "ans": [
+            "Basketball"
+        ],
+        "expl": [
+            "A jump ball is a method used to begin or resume play in basketball."
+        ],
+        "options": [
+            "Softball",
+            "Baseball",
+            "Basketball"
+        ]
+    },
+    {
+        "id": "14",
+        "que": "First time Common-wealth Games were played in?",
+        "ans": [
+            "Canada"
+        ],
+        "expl": [
+            "The first Commonwealth Games were held in Canada in 1930 in Hamilton, Ontario."
+        ],
+        "options": [
+            "Canada",
+            "London",
+            "Brazil"
+        ]
+    },
+    {
+        "id": "15",
+        "que": "The distance of marathon race is?",
+        "ans": [
+            "26 miles"
+        ],
+        "expl": [
+            "The marathon is a long-distance race with an official distance of approximately 26 miles."
+        ],
+        "options": [
+            "23 miles",
+            "26 miles",
+            "13 miles"
+        ]
+    },
+    {
+        "id": "16",
+        "que": "How many players of each soccer team are there playing in the pitch?",
+        "ans": [
+            "11"
+        ],
+        "expl": [
+            "Each team shall field 11 players on the field at one time."
+        ],
+        "options": [
+            "12",
+            "11",
+            "13"
+        ]
+    },
+    {
+        "id": "17",
+        "que": "How many players are there in a basketball team when having a game?",
+        "ans": [
+            "5"
+        ],
+        "expl": [
+            "Basketball is played with two teams, with 5 players from each team on the court at one time."
+        ],
+        "options": [
+            "5",
+            "6",
+            "7"
+        ]
+    },
+    {
+        "id": "18",
+        "que": "Which sport is played on the largest pitch?",
+        "ans": [
+            "Polo"
+        ],
+        "expl": [
+            "The sport with the largest pitch would be polo of the horse variety."
+        ],
+        "options": [
+            "Polo",
+            "Football",
+            "Baseball"
+        ]
+    },
+    {
+        "id": "19",
+        "que": "Which sport do the Oklahoma City Thunder play?",
+        "ans": [
+            "Basketball"
+        ],
+        "expl": [
+            "The Thunder competes in the National Basketball Association NBA"
+        ],
+        "options": [
+            "Basketball",
+            "Football",
+            "Baseball"
+        ]
+    },
+    {
+        "id": "20",
+        "que": "A teacher at YMCA invented basketball.",
+        "ans": [
+            "true"
+        ],
+        "expl": [
+            "James Naismith a teacher at YMCA in Massachusetts invented basketball in 1891."
+        ],
+        "options": [
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "21",
+        "que": "The first Olympic Games took place in Greece.",
+        "ans": [
+            "true"
+        ],
+        "expl": [
+            "The first Olympic Games took place in Olympia Greece in 8th century B.C."
+        ],
+        "options": [
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "22",
+        "que": "There are a total of 20 teams in the NBA.",
+        "ans": [
+            "false"
+        ],
+        "expl": [
+            "There are a total of 30 teams in the NBA."
+        ],
+        "options": [
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "23",
+        "que": "In a relay race do each team have 5 runners.",
+        "ans": [
+            "false"
+        ],
+        "expl": [
+            "Each team has 4runners. They must pass the baton to one another without dropping it."
+        ],
+        "options": [
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "24",
+        "que": "Mintonette was the original name of badminton.",
+        "ans": [
+            "false"
+        ],
+        "expl": [
+            "Mintonette was the original name of volleyball."
+        ],
+        "options": [
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "25",
+        "que": "The tennis players at Wimbledon must wear all white.",
+        "ans": [
+            "true"
+        ],
+        "expl": [
+            "Wimbledon has the strictest dress code of all Grand Slam tennis tournaments. All players must wear all white."
+        ],
+        "options": [
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "26",
+        "que": "The national sport of Japan is judo.",
+        "ans": [
+            "false"
+        ],
+        "expl": [
+            "The national sport of Japan is sumo wrestling."
+        ],
+        "options": [
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "27",
+        "que": "Polo is not an Olympic sport.",
+        "ans": [
+            "true"
+        ],
+        "expl": [
+            "Polo was removed from the official roster of Olympic events in 1940."
+        ],
+        "options": [
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "28",
+        "que": "Baseball is the only sport in USA with no game clock.",
+        "ans": [
+            "true"
+        ],
+        "expl": [
+            "Baseball has no game clock, although most games end in the ninth inning."
+        ],
+        "options": [
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "29",
+        "que": "Table Tennis is the second name of ping pong.",
+        "ans": [
+            "true"
+        ],
+        "expl": [
+            "Table tennis is more widely known as Ping Pong."
+        ],
+        "options": [
+            "true",
+            "false"
+        ]
+    },
+    {
+        "id": "30",
+        "que": "Which sport did Mike Tyson played?",
+        "ans": [
+            "Boxing"
+        ],
+        "expl": [
+            "MikeTyson is an American former professional boxer who competed from 1985 to 2005."
+        ],
+        "options": [
+            "Boxing",
+            "Basketball",
+            "Wrestling "
+        ]
+    },
+    {
+        "id": "31",
+        "que": "How high is the basketball hoop in feet?",
+        "ans": [
+            "10"
+        ],
+        "expl": [
+            "The top of the hoop is 10 feet above the ground."
+        ],
+        "options": [
+            "9",
+            "11",
+            "10"
+        ]
+    },
+    {
+        "id": "32",
+        "que": "Which is the national game of Brazil ?",
+        "ans": [
+            "Football"
+        ],
+        "expl": [
+            "Football is the national sport in Brazil."
+        ],
+        "options": [
+            "Football",
+            "Cricket",
+            "Ping pong"
+        ]
+    },
+    {
+        "id": "33",
+        "que": "What is the max time to look for the ball in golf when it get lost? ",
+        "ans": [
+            "3 min"
+        ],
+        "expl": [
+            "Under the Rules of Golf, you have three minutes to search for a golf ball. The three-minute time limit is new."
+        ],
+        "options": [
+            "7 min",
+            "3 min",
+            "6 min"
+        ]
+    },
+    {
+        "id": "34",
+        "que": "How many points is the touchdown worth in American football?",
+        "ans": [
+            "6"
+        ],
+        "expl": [
+            "A touchdown is worth six points."
+        ],
+        "options": [
+            "7",
+            "8",
+            "6"
+        ]
+    },
+    {
+        "id": "35",
+        "que": "The Olympic flag has how many rings?",
+        "ans": [
+            "5"
+        ],
+        "expl": [
+            "The Olympic flag has five interlaced rings in the centre: blue, yellow, black, green and red."
+        ],
+        "options": [
+            "5",
+            "6",
+            "7"
+        ]
+    },
+    {
+        "id": "36",
+        "que": "Which is the national sport of canada?",
+        "ans": [
+            "Ice Hockey"
+        ],
+        "expl": [
+            "National Sports of Canada Act say Hockey and Lacrosse to be national sports."
+        ],
+        "options": [
+            "Baseball",
+            "Ice Hockey",
+            "Rugby"
+        ]
+    },
+    {
+        "id": "37",
+        "que": "Which is the origin country of Tennis?",
+        "ans": [
+            "United Kingdom"
+        ],
+        "expl": [
+            "Most historians believe that tennis originated in the monastic cloisters in northern France in the 12th century."
+        ],
+        "options": [
+            "China",
+            "Japan",
+            "United Kingdom"
+        ]
+    },
+    {
+        "id": "38",
+        "que": "In a conventional game of football, how many players are fielded at a time?",
+        "ans": [
+            "22"
+        ],
+        "expl": [
+            "There are 22 players, 11 on offense and 11 on defense."
+        ],
+        "options": [
+            "22",
+            "11",
+            "18"
+        ]
+    },
+    {
+        "id": "39",
+        "que": "In high school football, how long is each quarter?",
+        "ans": [
+            "12 minutes"
+        ],
+        "expl": [
+            "Unlike the NFL and college which has four 15-minute periods, high school quarters are only 12 minutes."
+        ],
+        "options": [
+            "8 minutes",
+            "12 minutes",
+            "10 minutes"
+        ]
+    },
+    {
+        "id": "40",
+        "que": "Which NFL team has the longest season-ticket waiting list?",
+        "ans": [
+            "Green Bay Packers"
+        ],
+        "expl": [
+            "Packers' current wait to purchase season tickets is approximately 30 years."
+        ],
+        "options": [
+            "Miami Dolphins",
+            "New England Patriots",
+            "Green Bay Packers"
+        ]
+    },
+    {
+        "id": "41",
+        "que": "Which team won the first Super Bowl ever?",
+        "ans": [
+            "Green Bay Packers"
+        ],
+        "expl": [
+            "Packers won the Super Bowls, defeating the Kansas City Chiefs during the inaugural event in 1967."
+        ],
+        "options": [
+            "Green Bay Packers",
+            "Buffalo Bills",
+            "Kansas City Chiefs"
+        ]
+    },
+    {
+        "id": "42",
+        "que": "What was the first sport televised in the U.S.?",
+        "ans": [
+            "Baseball"
+        ],
+        "expl": [
+            "On May 17, 1939, baseball became the first sport ever televised in the U.S."
+        ],
+        "options": [
+            "Baseball",
+            "Basketball",
+            "Football"
+        ]
+    },
+    {
+        "id": "43",
+        "que": "How many dimples does the average golf ball have?",
+        "ans": [
+            "336"
+        ],
+        "expl": [
+            "The average golf ball has 336 dimples."
+        ],
+        "options": [
+            "215",
+            "622",
+            "336"
+        ]
+    },
+    {
+        "id": "44",
+        "que": "Which sport involves a bat, a ball and wickets?",
+        "ans": [
+            "Cricket"
+        ],
+        "expl": [
+            "Cricket is a bat-and-ball game played between two teams of eleven players on a field."
+        ],
+        "options": [
+            "Cricket",
+            "Baseball",
+            "Badminton"
+        ]
+    },
+    {
+        "id": "45",
+        "que": "How many pockets are there on a snooker table?",
+        "ans": [
+            "6"
+        ],
+        "expl": [
+            "A snooker table has six pockets, one at each corner and one at the center of each of the longest side cushions."
+        ],
+        "options": [
+            "5",
+            "6",
+            "8"
+        ]
+    },
+    {
+        "id": "46",
+        "que": "How many players are there in a rugby league team?",
+        "ans": [
+            "13"
+        ],
+        "expl": [
+            "A rugby league team consists of thirteen players on the field, with four substitutes on the bench."
+        ],
+        "options": [
+            "11",
+            "9",
+            "13"
+        ]
+    },
+    {
+        "id": "47",
+        "que": "What color is the centre of the target in archery?",
+        "ans": [
+            "Gold"
+        ],
+        "expl": [
+            "The center color of an archery target is usually gold."
+        ],
+        "options": [
+            "Black",
+            "Blue",
+            "Gold"
+        ]
+    },
+    {
+        "id": "48",
+        "que": "Do you know how many players there are in an ice hockey team?",
+        "ans": [
+            "6"
+        ],
+        "expl": [
+            "Hockey is played with six players on the ice for each team, five skaters and one goaltender."
+        ],
+        "options": [
+            "6",
+            "8",
+            "5"
+        ]
+    },
+    {
+        "id": "49",
+        "que": "How many panels make up a soccer ball?",
+        "ans": [
+            "32"
+        ],
+        "expl": [
+            "A soccer ball has 32 panels. 20 of these  panels are hexagons, while the other 12 panels are pentagons."
+        ],
+        "options": [
+            "28",
+            "32",
+            "36"
+        ]
+    },
+    {
+        "id": "50",
+        "que": "How many stitches are there on a baseball?",
+        "ans": [
+            "108"
+        ],
+        "expl": [
+            "There are exactly 108 stitches on a baseball. The first and last stitches are completely hidden."
+        ],
+        "options": [
+            "108",
+            "99",
+            "121"
+        ]
+    }
+]

@@ -9,10 +9,13 @@ export class LanguageResources {
         public AUDIOS = new LangAudios(),
     ) { }
 
-    static getFile(input: ActionInput, context: IContext): Promise<LanguageResources> {
+    static getFile(context: IContext): Promise<LanguageResources> {
         return new Promise((resolve, reject) => {
             let localeContent = _.get(context.sessionContext.sessionData, Constants.STRINGS.LOCALE_CONTENT)
-            let path = `${input.APP_NAME}/${input.STAGE}/${localeContent}/${Constants.FILE_NAMES.LANG_RESOURCE}`
+            let sessionData = _.get(context, Constants.STRINGS.SESSION_DATA)
+            let appName = _.get(sessionData, Constants.STRINGS.APPNAME)
+            let stage = _.get(sessionData, Constants.STRINGS.STAGE)
+            let path = `${appName}/${stage}/${localeContent}/${Constants.FILE_NAMES.LANG_RESOURCE}`
             context.cacheClient.getObject(path, LanguageResources, (err: any, data: LanguageResources) => {
                 if (err) {
                     context.logger.log(`Error while Fetching LanguageResources: path ${path} ${JSON.stringify(err)}`)
@@ -32,7 +35,25 @@ export class LangStrings {
         public ASK_TO_SELECT_TOPIC: string[] = [],
         public SET_STATE_SUCCESS: string[] = [],
         public WRONG_STATE: string[] = [],
-        public QUESTION_POINTS: string[] = []   
+        public INCORRECT_ANSWER: string[] = [],
+        public CORRECT_ANSWER: string[] = [],
+        public CORRECT_PERCENTAGE: string[] = [],
+        public BADGE_SPEECH: string[] = [],
+        public POINTS_SPEECH: string[] = [],
+        public QUESTION_DETAILS: string[] = [],
+        public QUESTION_COUNT: string[] = [],
+        public CURRENT_QUE_POINTS: string[] = [],
+        public END_SPEECH: string[] = [],
+        public TOPIC_OF_THE_DAY: string[] = [],
+        public QUESTION_NUMBER: string[] = [],
+        public POINTS_TEXT: string[] = [],
+        public TITLES: Titles = new Titles()
+    ) { }
+}
+
+export class Titles {
+    constructor(
+        public TOPIC_OF_THE_DAY: string = ""
     ) { }
 }
 
@@ -44,6 +65,7 @@ export class LangAudios {
 
 export class LangImages {
     constructor(
-        public DEFAULT_BG_IMAGE: string[] = []
+        public DEFAULT_BG_IMAGE: string[] = [],
+        public START_LOGO: string[] = []
     ) { }
 }

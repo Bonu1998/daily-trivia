@@ -1,0 +1,83 @@
+{
+    "type": "APL",
+    "version": "2022.1",
+    "license": "Copyright 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.\nSPDX-License-Identifier: LicenseRef-.amazon.com.-AmznSL-1.0\nLicensed under the Amazon Software License  http://aws.amazon.com/asl/",
+    "settings": {},
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-viewport-profiles",
+            "version": "1.4.0"
+        },
+        {
+            "name": "alexa-layouts",
+            "version": "1.5.0"
+        }
+    ],
+    "resources": [],
+    "styles": {},
+    "onMount": [],
+    "graphics": {},
+    "commands": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "alignItems": "center",
+                "justifyContent": "center",
+                "type": "Container",
+                "width": "100%",
+                "height": "100%",
+                "items": [
+                    {
+                        "type": "AlexaBackground",
+                        "backgroundImageSource": "${payload.data.DATA.background.url}"
+                    },
+                    {
+                        "alignItems": "center",
+                        "type": "Container",
+                        "width": "80%",
+                        "height": "90%",
+                        "items": [
+                            {
+                                "type": "Container",
+                                "height": "80%",
+                                "width": "90%",
+                                "items": [
+                                    {
+                                        "text": "${payload.data.DATA.title.text}",
+                                        "fontSize": "60px",
+                                        "textAlignVertical": "center",
+                                        "type": "Text",
+                                        "width": "100%",
+                                        "height": "20%"
+                                    },
+                                    {
+                                        "type": "Text",
+                                        "text": "${payload.data.DATA.explanation}",
+                                        "fontSize": "40px",
+                                        "height": "80%",
+                                        "width": "100%"
+                                    }
+                                ]
+                            },
+                            {
+                                "text": "${payload.data.DATA.percentage}",
+                                "fontSize": "40dp",
+                                "layoutDirection": "inherit",
+                                "textAlign": "center",
+                                "textAlignVertical": "top",
+                                "type": "Text",
+                                "width": "60%",
+                                "height": "40%"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

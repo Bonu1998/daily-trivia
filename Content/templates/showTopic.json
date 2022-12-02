@@ -1,0 +1,123 @@
+{
+    "type": "APL",
+    "version": "2022.1",
+    "license": "Copyright 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.\nSPDX-License-Identifier: LicenseRef-.amazon.com.-AmznSL-1.0\nLicensed under the Amazon Software License  http://aws.amazon.com/asl/",
+    "settings": {},
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-viewport-profiles",
+            "version": "1.4.0"
+        },
+        {
+            "name": "alexa-layouts",
+            "version": "1.5.0"
+        }
+    ],
+    "resources": [
+        {
+            "dimension": {
+                "titleFontSize": "55px",
+                "primaryTextFontSize": "60px",
+                "pointsFontSize": "20px"
+            }
+        },
+        {
+            "when": "${@viewportSizeClass == @viewportClassMediumSmall}",
+            "dimension": {
+                "titleFontSize": "45px",
+                "primaryTextFontSize": "45px",
+                "pointsFontSize": "15px"
+            }
+        },
+        {
+            "when": "${@viewportSizeClass == @viewportClassMediumXSmall}",
+            "dimension": {
+                "titleFontSize": "35px",
+                "primaryTextFontSize": "35px",
+                "pointsFontSize": "13px"
+            }
+        },
+        {
+            "when": "${@viewportSizeClass == @viewportClassXSmallXSmall}",
+            "dimension": {
+                "titleFontSize": "35px",
+                "primaryTextFontSize": "35px",
+                "pointsFontSize": "13px"
+            }
+        }
+    ],
+    "styles": {},
+    "onMount": [],
+    "graphics": {},
+    "commands": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "alignItems": "center",
+                "justifyContent": "center",
+                "type": "Container",
+                "width": "100%",
+                "height": "100%",
+                "items": [
+                    {
+                        "type": "AlexaBackground",
+                        "backgroundImageSource": "${payload.data.DATA.background.url}"
+                    },
+                    {
+                        "type": "Container",
+                        "width": "80%",
+                        "height": "70%",
+                        "alignItems": "center",
+                        "items": [
+                            {
+                                "text": "${payload.data.DATA.title.text}",
+                                "fontSize": "@titleFontSize",
+                                "textAlign": "center",
+                                "textAlignVertical": "center",
+                                "type": "Text",
+                                "height": "25%"
+                            },
+                            {
+                                "type": "Image",
+                                "source": "${payload.data.DATA.primaryImage.url}",
+                                "height": "42%",
+                                "width": "42%"
+                            },
+                            {
+                                "type": "Text",
+                                "text": "${payload.data.DATA.primaryText.text}",
+                                "fontSize": "@primaryTextFontSize",
+                                "fontWeight": "bold",
+                                "height": "20%"
+                            },
+                            {
+                                "backgroundColor": "#AEAEAE",
+                                "borderRadius": "30",
+                                "type": "Frame",
+                                "width": "13%",
+                                "height": "8%",
+                                "items": [
+                                    {
+                                        "text": "${payload.data.DATA.points}",
+                                        "fontSize": "@pointsFontSize",
+                                        "textAlign": "center",
+                                        "textAlignVertical": "center",
+                                        "color": "#0A0708",
+                                        "type": "Text",
+                                        "width": "100%",
+                                        "height": "100%"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

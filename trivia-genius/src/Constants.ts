@@ -1,15 +1,21 @@
 export const Constants ={
     TEMPLATES:{
         START:"START",
-        QUESTION: "QUESTION"
+        QUESTION: "QUESTION",
+        SHOW_TOPIC:"SHOW_TOPIC",
+        ANSWER:"ANSWER"
     },
     PLATFORM:{
-        ALEXA:"ALEXA"
+        ALEXA:"alexa"
     },
     TAGS:{
         AUDIO:"AUDIO"
     },
     STRINGS:{
+        QUESTION_TAG:"QUESTION_TAG",
+        DEVICE_TIMEZONE:"DEVICE_CONFIG.DEVICE_TIMEZONE",
+        USER_ID: "USER_ID",
+        LAST_QUESTION_TYPE: "LAST_QUESTION_TYPE",
         LAST_QUESTION:"LAST_QUESTION",
         PLATFORM:"PLATFORM",
         LAST_SPEECH:"LAST_SPEECH",
@@ -26,6 +32,7 @@ export const Constants ={
         STAGE:"STAGE",
         DEVICE_SIZE:"DEVICE_CONFIG.DEVICE_SIZE",
         ROUND_DATA:"ROUND_DATA",
+        NO_OF_QUE_FETCHED: "ROUND_DATA.noOfQuestionsFetched",
         TODAYS_QUESTION:"TODAYS_QUESTION",
         BONUS_QUESTION:"BONUS_QUESTION"
     },
@@ -35,10 +42,13 @@ export const Constants ={
         INVALID_CLOSE:"INVALID_CLOSE"
     },
     SEND_EVENT:{
-        SHOW_TOPIC:"SHOW_TOPIC",
-        ASK_TO_SELECT_STATE:"ASK_TO_SELECT_STATE"
+        ASK_QUESTION:"ASK_QUESTION",
+        SHOW_TOPIC:"SHOW_TOPIC"
     },
     URLS:{
+        TEMPLATE:"TEMPLATE",
+        TOPIC_LOGO:"TOPIC_LOGO",
+        START_LOGO:"START_LOGO",
         DEFAULT_BG:"DEFAULT_BG",
         WELCOME_AUDIO:"WELCOME_AUDIO"
     },

@@ -5,12 +5,28 @@
         "OHIO"
     ],
     "GAMEPLAY": {
-        "total_todays_question_per_day": 1,
-        "total_bonus_questions_per_day": 1,
+        "no_daily_question_per_day": 1,
+        "no_bonus_questions_per_day": 1,
+        "no_extra_bonus_per_day":2,
         "points_per_question": 3,
         "points_per_bonus_question": 4,
         "stateLeaderboardLength": 10,
-        "playerStandingLenght": 10
+        "playerStandingLenght": 10,
+        "options_for_question": ["A", "B", "C", "D"]
     },
-    "PREMIUM_PRODUCTS": []
+    "PREMIUM_PRODUCTS": [],
+    "TOPICS": [
+        {
+            "name": "Geography",
+            "id": "geography",
+            "isPremium": false,
+            "isActive": true
+        },
+        {
+            "name": "Sports",
+            "id": "sports",
+            "isPremium": false,
+            "isActive": true
+        }
+    ]
 }
